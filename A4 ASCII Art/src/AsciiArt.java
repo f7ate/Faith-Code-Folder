@@ -1,6 +1,6 @@
 /* Project Name: Ascii Art
  Name: FAITH
- Date: Sept 13th 2024
+ Date: Sept 16th 2024
  Description: Ascii Animal Art 
  */
 
@@ -11,20 +11,16 @@ public class AsciiArt
     {
     
 	{
-		System.out.println("Your Name \t  Date \t Period\n\n" );
-		System.out.println("What type of ANIMAL YOU WILL DRAW" );
-		System.out.println("\n\n\n\n" );
-
-
-		System.out.println("                /\\                " );
-		System.out.println("               /  \\               " );
-		System.out.println("              /    \\              " );
-		System.out.println("             [------]             " );
-		//add other output
-
-		System.out.println(" \n\n\n\nHelpFul Hints" );
-		System.out.println("\\\\ draws one backslash on the screen!\n" );
-		System.out.println("\\\" draws one double quote on the screen!\n" );
-		System.out.println("\\\' draws one single quote on the screen!\n" ); 
+		System.out.println("   __    " );
+		System.out.println("  (  \\   " );
+		System.out.println("   )   )   " );
+		System.out.println("  (   (   .-'''-. A.-.A" );
+		System.out.println("   \\  \\/        \\/ , , \\ ");
+		System.out.println("    \\      \\   =;    t  /= ");
+		System.out.println("     \\      |''. \\ ___ /  ");
+		System.out.println("       /    //  |  ||   "); 
+		System.out.println("      / __ ,))  | __ ,))  ");
+	
     }
+	}
 }

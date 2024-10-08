@@ -8,5 +8,9 @@
     public static void main(String[] args) throws Exception {
         double wingCost = 0.75;
         double Cost = 4.75;
+
+        double getWings = (totalMoney/wingCost);
+        System.print.out(getWings);
+        
     }
 }

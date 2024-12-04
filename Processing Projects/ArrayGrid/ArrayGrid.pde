@@ -9,6 +9,10 @@ void draw () {
   g.displayGrid();
 }
 
+void mousePressed() {
+  g.click(mouseX, mouseY);
+}
+
 class grid {
   int ROWS, COLS;
   boolean[][] gridarray;
@@ -22,14 +26,19 @@ class grid {
     for (int y = 0; y < ROWS; y++) {
       for (int x = 0; x < COLS; x++) {
         gridarray[y][x] = false;
+      
       }
+      
     }
   }
   
   void displayGrid() {
     for (int y = 0; y < ROWS; y++) {
       for (int x = 0; x < COLS; x++) {
-        fill(255);
+        
+        if (gridarray[y][x] == false) {
+          fill(255); //White fill if false
+        }
         
         int cellWidth = width / COLS;
         int cellHeight = height / ROWS;
@@ -38,5 +47,15 @@ class grid {
         rect(x * cellWidth, y * cellHeight, cellWidth, cellHeight);
       }
     }  
+  }
+  
+  void click(int mx, int my) {
+    int cellWidth = width / COLS;
+    int cellHeight = height / ROWS;
+    
+    int x = mx / cellWidth;
+    int y = my / cellHeight;
+    
+    if (gridarray[y][x])
   }
 }

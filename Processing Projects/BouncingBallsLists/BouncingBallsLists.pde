@@ -15,8 +15,12 @@ void draw() { // Happens constantly (screen refresh)
       theBall.move();
       
       for (Ball otherBall : ballGroup) {
-        theBall.checkCollision(otherBall);
+        if (theBall != otherBall) {
+          theBall.checkCollision(otherBall);
+        
+          }
       }
+      
       theBall.display();
     }
     //Old Loop
@@ -49,7 +53,6 @@ class Ball {
     int dx, dy; //Speed or Velocity
     int cr, cg, cb; //RGB Values
     int grav; //Gravity
-    
     boolean infected;
 
     //Constructor
@@ -73,10 +76,12 @@ class Ball {
     }
 
     void display() {
+      //Infection Properties
         if (infected == true) {
         cr = 255;
         cg = 0;
         cb = 0;
+        grav = -1;
         }
         
         fill(cr, cg, cb);

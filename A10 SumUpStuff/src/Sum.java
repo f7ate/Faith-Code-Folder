@@ -9,9 +9,18 @@
     private int two;
     private int sum; // Result of addition
 
-    public void setNums (int num1, int num2)
-    }
+    public void setNums (int num1, int num2) {
     one = num1;
     two = num2;
+
+    }
+    //To calculate the sum of numbers
+    public void calculateSum() {
+        sum = one + two;
+    }
+
+    public void print() {
+        System.out.println("The sum of " + one + " and " + two + " is " + sum + ".");
+    }
 }
 

@@ -14,6 +14,14 @@ public class TriangleRunner {
     public static void main(String[] args) {
         Triangle triangle = new Triangle();
         Scanner scanner = new Scanner(System.in);
+
+        //prompt for user
+        System.out.println("Enter side a of the triangle: ");
+        double a = scanner.nextDouble();
+        System.out.println("Enter side b of the triangle: ");
+        double b = scanner.nextDouble();
+        System.out.println("Enter side c of the triangle: ");
+        double c = scanner.nextDouble();
     }
     
 }

@@ -29,6 +29,11 @@ public class ModuleRunner {
             double width = scanner.nextDouble();
             System.out.println("Perimeter of the Rectangle: " + module.calculateRectanglePerimeter(length, width));
 
+        } else if (choice == 2) {
+            System.out.println("Enter the side length of the cube: ");
+            double side = scanner.nextDouble();
+            System.out.println("Surface Area of the Cube: " + module.calculateCubeSurfaceArea(side));
+        
         }
 
     }

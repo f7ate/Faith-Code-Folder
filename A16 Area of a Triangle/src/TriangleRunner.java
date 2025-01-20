@@ -8,17 +8,12 @@ Surface  = Perimeter / 2
 Area = sqrt (s (s-a) (s-b) (s-c))
  */
 
+import java.util.Scanner;
+
 public class TriangleRunner {
-    //calculate perimeter of triangle
-    public double calculatePerimeter(double a, double b, double c) {
-        return a + b + c;
-    }
-        
-    //calculating the are of the triangle
-    public double calculateArea(double a, double b, double c) {
-        double perimeter = calculatePerimeter(a, b, c);
-        double s = perimeter / 2;
-        return Math.sqrt(s * (s - a) * (s - b) * (s - c));
+    public static void main(String[] args) {
+        Triangle triangle = new Triangle();
+        Scanner scanner = new Scanner(System.in);
     }
     
 }

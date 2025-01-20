@@ -15,6 +15,11 @@ public class Module {
     }
 
     public double calculateCubeSurfaceArea(double side) {
-        return 6 * Math.pow(side, 2);
+        return 6 * side * side;
     }
+
+    public double calculateCircleArea(double radius) {
+        return Math.PI * radius * radius;
+    }
+
     }

@@ -7,7 +7,11 @@ distance = rate * time          minutes / 60 = hours  ( 360 / 60 == 6 hours )
  */
 
 public class MilesPerHour {
-    public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+    public double calculateSpeed(double distance, int hours, int minutes) {
+        //time into hrs
+        double totalTimeInHours = hours + (minutes / 60.0);
+
+        return distance / totalTimeInHours;
+    
     }
 }

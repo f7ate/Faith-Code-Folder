@@ -21,6 +21,15 @@ public class ModuleRunner {
         System.out.println("3. Area of a Circle");
         System.out.println("Enter your choice: 1, 2 or 3");
         int choice = scanner.nextInt();
+        
+        if (choice == 1) {
+            System.out.println("Enter the length of the rectangle: ");
+            double length = scanner.nextDouble();
+            System.out.println("Enter the width of the rectangle: ");
+            double width = scanner.nextDouble();
+            System.out.println("Perimeter of the Rectangle: " + module.calculateRectanglePerimeter(length, width));
+
+        }
 
     }
 

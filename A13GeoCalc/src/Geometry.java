@@ -9,7 +9,7 @@ Area of a Circle. Formula: A = πr2 or A = Pi * r2
  */
 
 
-public class Module {
+public class Geometry {
     public double calculateRectanglePerimeter(double length, double width) {
         return 2 * (length + width);
     }

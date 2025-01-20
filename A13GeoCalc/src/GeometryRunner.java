@@ -10,9 +10,9 @@ Area of a Circle. Formula: A = πr2 or A = Pi * r2
 
 import java.util.Scanner;
 
-public class ModuleRunner {
+public class GeometryRunner {
     public static void main(String[] args) {
-        Module module = new Module();
+        Geometry module = new Geometry();
         Scanner scanner = new Scanner(System.in);
     
         System.out.println("Choose a calculation:");

@@ -16,17 +16,23 @@ public class TriangleRunner {
         Scanner scanner = new Scanner(System.in);
 
         //prompt for user
-        System.out.println("Enter side a of the triangle: ");
+        System.out.println("Enter side a : ");
         double a = scanner.nextDouble();
-        System.out.println("Enter side b of the triangle: ");
+        System.out.println("Enter side b : ");
         double b = scanner.nextDouble();
-        System.out.println("Enter side c of the triangle: ");
+        System.out.println("Enter side c : ");
         double c = scanner.nextDouble();
 
         //calculate the perimeter
         double perimeter = triangle.calculatePerimeter(a, b, c);
         //calculate the area
         double area = triangle.calculateArea(a, b, c);
+
+        //output
+        System.out.println("The perimeter of the triangle is: " + perimeter);
+        System.out.println("The area of the triangle is: " + area);
+
+        scanner.close();
     }
     
 }

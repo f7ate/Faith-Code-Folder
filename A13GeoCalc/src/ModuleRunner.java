@@ -34,8 +34,16 @@ public class ModuleRunner {
             double side = scanner.nextDouble();
             System.out.println("Surface Area of the Cube: " + module.calculateCubeSurfaceArea(side));
         
+        } else if (choice == 3) {
+            System.out.println("Enter the radius of the circle: ");
+            double radius = scanner.nextDouble();
+            System.out.println("Area of the Circle: " + module.calculateCircleArea(radius));
+        
+        } else {
+            System.out.println("Invalid choice! Please reselect and Select 1, 2, or 3 :) ");
         }
 
+        scanner.close();
     }
 
     }

@@ -22,6 +22,11 @@ public class TriangleRunner {
         double b = scanner.nextDouble();
         System.out.println("Enter side c of the triangle: ");
         double c = scanner.nextDouble();
+
+        //calculate the perimeter
+        double perimeter = triangle.calculatePerimeter(a, b, c);
+        //calculate the area
+        double area = triangle.calculateArea(a, b, c);
     }
     
 }

@@ -8,7 +8,7 @@ distance = rate * time          minutes / 60 = hours  ( 360 / 60 == 6 hours )
 
 import java.util.Scanner;
 
-public class MilesPerHourRunner {
+public class MPHRunner {
     public static void main(String[] args) {
         MilesPerHour mph = new MilesPerHour();
         Scanner scanner = new Scanner(System.in);

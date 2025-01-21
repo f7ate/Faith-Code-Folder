@@ -25,7 +25,7 @@ public class MilesPerHourRunner {
         //calculate the speed
         double speed = mph.calculateSpeed(distance, hours, minutes);
         //output 
-        System.out.println("The speed is: " + speed + " miles per hour.");
+        System.out.println("The speed is: " + speed + " MPH.");
 
         scanner.close();
     

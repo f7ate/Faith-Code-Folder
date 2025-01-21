@@ -38,6 +38,11 @@ public class App {
     }
 
     public static int getSum(int[] numArray, int start, int stop) {
+        int sum = 0;
+        for (int i = start; 1 <= stop && i < numArray.length; i++) {
+
+        }
+        return sum;
 
 
 

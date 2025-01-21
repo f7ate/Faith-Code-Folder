@@ -43,8 +43,32 @@ public class App {
 
         }
         return sum;
-
-
-
     }
+
+    public static int getCount(int[] numArray, int val) {
+        int count = 0;
+        for (int num : numArray) {
+            if (num == val) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    public static int[] removeVal(int[] numArray, int val) {
+        //count occurences of the value
+        int count = getCount(numArray, val);
+
+        //create a new array
+        int[] result = new int[numArray.length - count];
+        int index = 0;
+
+        for (int num : numArray) {
+            if (num != val) {
+                result[index++] = num;
+            }
+        }
+        return result;
+    }
+
 }

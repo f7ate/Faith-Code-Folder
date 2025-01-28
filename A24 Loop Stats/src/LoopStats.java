@@ -15,13 +15,26 @@ public class LoopStats {
         }
         return sum;
     }
+
+//Method to find all odd numbers
+    public static ArrayList<Integer> getOddNumbers(int start, int stop) {
+        ArrayList<Integer> oddNumbers = new ArrayList<>();
+        for (int i = start; i <= stop; i++) {
+            if (i % 2 != 0) { //Check if number is odd
+                oddNumbers.add(i);
+            }
+        }
+        return oddNumbers;
 }
 
-public static ArrayList<Integer> getOddNumbers(int start, int stop) {
-    ArrayList<Integer> oddNumbers = new ArrayList<>();
-    for (int i = start; i <= stop; i++) {
-        if (i % 2 != 0) {
-            oddNumbers.add(i);
+    //Method to find all even numbers
+    public static ArrayList<Integer> getEvenNumbers(int start, int stop) {
+        ArrayList<Integer> evenNumbers = new ArrayList<>();
+        for (int i = start; i <= stop; i++) {
+            if (i % 2 != 0) { //Check if number is even
+                evenNumbers.add(i);
+            }
         }
+        return evenNumbers;
     }
 }

@@ -5,9 +5,14 @@
 */
 
 
+import java.util.Scanner;
+
 public class LeapYearRunner {
-    //To check if year is a leap year
-    public static boolean isLeapYear (int year) {
-        return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        //Asking user for prompt
+        System.out.println("Enter a year: ");
+        int year = scanner.nextInt();
     }
 }

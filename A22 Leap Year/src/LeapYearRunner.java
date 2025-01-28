@@ -14,5 +14,11 @@ public class LeapYearRunner {
         //Asking user for prompt
         System.out.println("Enter a year: ");
         int year = scanner.nextInt();
+
+        boolean isLeap = LeapYear.isLeapYear(year);
+
+        if (isLeap) {
+            System.out.println(year + " is a leap year.");
+        }
     }
 }

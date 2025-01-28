@@ -14,5 +14,11 @@ public class CoolNumbersRunner {
         //Prompt user to enetr max number
         System.out.println("Enter a maximum number: ");
         int max = scanner.nextInt();
+
+        int coolCount = CoolNumbers.countCoolNumbers(max);
+
+        System.out.println("Number of cool numbers between 6 and " + max + ": " + coolCount);
+
+        scanner.close();
     }
 }

@@ -10,5 +10,9 @@ import java.util.Scanner;
 public class CoolNumbersRunner {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+
+        //Prompt user to enetr max number
+        System.out.println("Enter a maximum number: ");
+        int max = scanner.nextInt();
     }
 }

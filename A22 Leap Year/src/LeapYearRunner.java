@@ -19,6 +19,10 @@ public class LeapYearRunner {
 
         if (isLeap) {
             System.out.println(year + " is a leap year.");
+        } else {
+            System.out.println(year + " is NOT a leap year.");
         }
+
+        scanner.close();
     }
 }

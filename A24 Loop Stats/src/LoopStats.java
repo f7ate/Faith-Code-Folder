@@ -16,3 +16,12 @@ public class LoopStats {
         return sum;
     }
 }
+
+public static ArrayList<Integer> getOddNumbers(int start, int stop) {
+    ArrayList<Integer> oddNumbers = new ArrayList<>();
+    for (int i = start; i <= stop; i++) {
+        if (i % 2 != 0) {
+            oddNumbers.add(i);
+        }
+    }
+}

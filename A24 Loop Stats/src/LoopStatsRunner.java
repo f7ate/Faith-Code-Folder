@@ -18,11 +18,14 @@ public class LoopStatsRunner {
         System.out.println("Enter the stop number: ");
         int stop = scanner.nextInt();
 
+    
         if (start > stop) {
             System.out.println("Error: Start number must be less than or equal to the stop number.");
         } else {
+            //Calculate the total sum, odd nums and even nums
             int totalSum = LoopStats.calculateSum(start, stop);
             System.out.println("Sum of numbers from " + start + " to " + stop + ": " + totalSum);
+
             System.out.println("Odd numbers: " + LoopStats.getOddNumbers(start, stop));
             System.out.println("Even numbers: " + LoopStats.getEvenNumbers(start, stop));
 

@@ -14,5 +14,8 @@ public class LoopStatsRunner {
         //Prompt user for values
         System.out.println("Enter the start number: ");
         int start = scanner.nextInt();
+
+        System.out.println("Enter the stop number: ");
+        int stop = scanner.nextInt();
     }
 }

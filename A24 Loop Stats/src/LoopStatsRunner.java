@@ -21,8 +21,13 @@ public class LoopStatsRunner {
         if (start > stop) {
             System.out.println("Error: Start number must be less than or equal to the stop number.");
         } else {
-            
+            int totalSum = LoopStats.calculateSum(start, stop);
+            System.out.println("Sum of numbers from " + start + " to " + stop + ": " + totalSum);
+            System.out.println("Odd numbers: " + LoopStats.getOddNumbers(start, stop));
+            System.out.println("Even numbers: " + LoopStats.getEvenNumbers(start, stop));
+
         }
-        }
+
+        scanner.close();
     }
 }
